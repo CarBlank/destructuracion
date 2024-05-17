@@ -92,7 +92,7 @@ sumEveryOther(11, 3, 12); //26
 
 //revisar-----------------------------------
     
-/* function addOnlyNums(...args) {
+function addOnlyNums(...args) {
     let sum = 0;
     for (const arg of args) {
       if (typeof arg === 'number') {
@@ -100,7 +100,9 @@ sumEveryOther(11, 3, 12); //26
       }
     }
     return sum;
-} */
+}
+
+console.log (addOnlyNums (1,'perro',2,4))
 
 /* function addOnlyNums(...elements) {
     if(typeof elements === 'number') {
@@ -116,10 +118,25 @@ sumEveryOther(11, 3, 12); //26
 //----------------------------------------------
 
 /* 
-countTheArgs('gato', 'perro'); //2
-countTheArgs('gato', 'perro', 'pollo', 'oso'); //4
-
+function addOnlyNums(...args) {
+    let suma = 0
+    for (let i= 0; i < args.length; i++ ) {
+      if (typeof args[i] === "number" ) {
+        suma += args[i]
+      }
+    }
+    return suma
+  }
+  
+  console.log (addOnlyNums (1,'perro',2,4))
+  
  */
+
+  function countTheArgs (...countTheArgs) {
+    return countTheArgs.length
+   }
+  console.log (countTheArgs('gato', 'perro'))
+  console.log (countTheArgs('gato', 'perro', 'pollo', 'oso'))
 
 
 
