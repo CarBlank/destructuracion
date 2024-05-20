@@ -61,7 +61,7 @@ const mergPokemon = {...pokemon, ...pikachu}
 console.log(mergPokemon)
 
 
-//sumEveryOther
+/*Recibe cualquier cantidad y lo suma*/
 
 function sumEveryOther(...numbers) {
    /*  const arrayNum = [''];
@@ -91,7 +91,10 @@ sumEveryOther(6, 8, 2, 3, 1); //20
 sumEveryOther(11, 3, 12); //26
 
 //revisar-----------------------------------
-    
+   
+
+/*Reciba numero strigns y retornar la suma de los numeros*/
+
 function addOnlyNums(...args) {
     let sum = 0;
     for (const arg of args) {
@@ -132,18 +135,29 @@ function addOnlyNums(...args) {
   
  */
 
+
+
+/*Reciba cualquier argumento y devuelva el numero de arguntos recibidos*/
+
   function countTheArgs (...countTheArgs) {
     return countTheArgs.length
    }
   console.log (countTheArgs('gato', 'perro'))
   console.log (countTheArgs('gato', 'perro', 'pollo', 'oso'))
 
-
+/*Recibe dos arrays como argumentos y solo devuelva un array combinandos de los dos*/
 
 function combineTwoArrays(array1, array2) {
     const concatArray = [...array1, ...array2]
 
-    console.log(concatArray);
 }
 
-combineTwoArrays()
+console.log(combineTwoArrays())
+
+
+
+function comnbienTwoArrays(array1, array2){
+  return [...array1,...array2]
+
+}
+console.log (comnbienTwoArrays (['patata', 'tomate', 'lechuga'],[1, true, 'chocolate']))
